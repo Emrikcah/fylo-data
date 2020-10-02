@@ -1,1 +1,104 @@
-/* No CSS */
+.title {
+  background-color: #1d2c67;
+  padding: 50px 25px;
+  margin-bottom: 20px;
+  border-radius: 8px 110px 8px 8px;
+}
+
+.title .title-logo {
+  margin-bottom: 35px;
+}
+
+.title .title-logo img {
+  width: 10rem;
+}
+
+.title .title-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+.title .title-icons .title-icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  background-color: #0c122c;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.title .title-icons .title-icon-bg img {
+  width: 1.7rem;
+}
+
+.data {
+  padding: 15px 0 15px 0;
+  background-color: #1d2c67;
+  border-radius: 8px;
+  color: #dddbff;
+}
+
+.data .data-text {
+  text-align: center;
+}
+
+.data .data-text span {
+  font-weight: 700;
+}
+
+.data .data-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data .data-info .progress-bar {
+  background: #0c122c;
+  border-radius: 20px;
+  height: 30px;
+  width: 300px;
+}
+
+.data .data-info .progress-bar .progress-done {
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 20px;
+  height: 100%;
+  width: 200px;
+}
+
+.data .data-info .data-usage {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: red;
+}
+
+.data .data-info .data-usage span {
+  font-weight: 700;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  max-width: 375px;
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container {
+  width: 95%;
+  margin: 8rem auto 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}

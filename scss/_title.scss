@@ -1,0 +1,37 @@
+.title {
+  background-color: $dark-blue;
+  padding: 50px 25px;
+
+  margin-bottom: 20px;
+  border-radius: 8px 110px 8px 8px;
+             
+
+  .title-logo {
+    margin-bottom: 35px;
+
+    img {
+      width: 10rem;
+    }
+  }
+
+  .title-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+
+    .title-icon-bg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20%;
+      background-color: $very-dark-blue;
+      width: 3.5rem;
+      height: 3.5rem;
+
+      img {
+        width: 1.7rem;
+      }
+    }
+  }
+}
