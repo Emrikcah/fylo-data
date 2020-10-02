@@ -1,45 +1,78 @@
 .data {
-  padding: 15px 0 15px 0;
+  position: relative;
+  padding: 50px 25px;
   background-color: $dark-blue;
   border-radius: 8px;
   color: $pale-blue;
-  
 
   .data-text {
     text-align: center;
+    margin-top: 0;
 
     span {
       font-weight: $bold;
     }
   }
-  .data-info {
+
+  .progress-bar {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-   
+    background: $very-dark-blue;
+    border-radius: 20px;
+    height: 20px;
+    margin-bottom: 7px;
 
-    .progress-bar {
-      background: $very-dark-blue;
+    .progress-bar-length {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background: $clr-primary;
       border-radius: 20px;
-      height: 30px;
-      width: 300px;
-
-      .progress-done {
-        background: $clr-primary;
-        border-radius: 20px;
-        height: 100%;
-        width: 200px;
-      }
+      height: 80%;
+      width: 200px;
+      margin-left: 3px;
     }
 
-    .data-usage {
-       display: flex;
-       justify-content: space-between;
-       width: 100%;
-       background-color: red;
-      span {
-        font-weight: $bold;
-      }
+    .progress-bar-ball {
+      background: #fff;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      margin-right: 1.5px;
     }
-  } //end data-info
+  }
+
+  .data-usage {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-weight: $bold;
+    }
+  }
+
+  .data-float {
+    position: absolute;
+    left: 27%;
+    bottom: -20%;
+
+    background: $pale-blue;
+    text-align: center;
+    border-radius: 8px;
+    padding: 17px 20px 10px;
+
+    span:not(:last-child) {
+      font-weight: $bold;
+      font-size: 2.5rem;
+      color: $blk;
+    }
+
+    span {
+      color: $grayish-blue;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+  }
 } //end data

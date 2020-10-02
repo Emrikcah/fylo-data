@@ -2,23 +2,18 @@
 @import "title";
 @import "data";
 
-html{
-  
-}
-
 body {
- font-size: 14px;
-  
+  font-size: 14px;
   font-family: $raleway;
   max-width: $mobile;
-  // height: 100vh;
+  height: 100vh;
   background-image: url(../images/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
 
   .container {
     width: 95%;
-    margin: 8rem auto 0;
+    margin: 5rem auto 0.156rem;
   }
 }
 
