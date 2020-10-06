@@ -20,7 +20,7 @@ body {
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: 1920px) {
   body {
     display: grid;
     place-items: center;
