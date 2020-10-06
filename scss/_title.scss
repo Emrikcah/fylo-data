@@ -34,7 +34,7 @@
   }
 }
 
-@media(min-width: 1920px){
+@media(min-width: $desktop){
   .title{
     width: 350px;
     margin: 0;

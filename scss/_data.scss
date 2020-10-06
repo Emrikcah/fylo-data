@@ -77,7 +77,7 @@
   }
 } //end data
 
-@media (min-width: 1920px) {
+@media (min-width: $desktop) {
   .data {
     width: 540px;
 
