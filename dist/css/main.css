@@ -34,6 +34,16 @@
   width: 1.7rem;
 }
 
+@media (min-width: 1440px) {
+  .title {
+    width: 350px;
+    margin: 0;
+  }
+  .title .title-icons {
+    width: 60%;
+  }
+}
+
 .data {
   position: relative;
   padding: 50px 25px;
@@ -61,14 +71,14 @@
   margin-bottom: 7px;
 }
 
-.data .progress-bar .progress-bar-length {
+.data .progress-bar .progress-bar-inner {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background: linear-gradient(to right, #ffa399, #ff4d97);
   border-radius: 20px;
   height: 80%;
-  width: 200px;
+  width: 82%;
   margin-left: 3px;
 }
 
@@ -112,26 +122,61 @@
   vertical-align: middle;
 }
 
+@media (min-width: 1440px) {
+  .data {
+    width: 540px;
+  }
+  .data .data-text {
+    text-align: left;
+  }
+  .data .data-float {
+    left: 63%;
+    bottom: 80%;
+    width: 25%;
+  }
+  .data .data-float::after {
+    position: absolute;
+    content: "\25e5";
+    font-size: 50px;
+    color: #dddbff;
+    bottom: -38px;
+    right: -4px;
+  }
+}
+
 body {
   font-size: 14px;
   font-family: "Raleway", sans-serif;
-  max-width: 375px;
   height: 100vh;
+  background: #0c122c;
   background-image: url(../images/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
 }
 
 body .container {
-  width: 95%;
-  margin: 5rem auto 0.156rem;
+  width: 90%;
+  max-width: 375px;
+  margin: 6rem auto 5rem;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: #3e52a3;
+@media (min-width: 1440px) {
+  body {
+    display: grid;
+    place-items: center;
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: left 100%;
+    background-size: 100% 50%, cover;
+  }
+  body .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 0 240px 0;
+    width: 54%;
+    max-width: 100%;
+    height: 50vh;
+  }
 }

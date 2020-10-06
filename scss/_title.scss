@@ -33,3 +33,14 @@
     }
   }
 }
+
+@media(min-width: $desktop){
+  .title{
+    width: 350px;
+    margin: 0;
+
+    .title-icons{
+      width: 60%;
+    }
+  }
+}
