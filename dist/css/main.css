@@ -133,14 +133,34 @@
     left: 63%;
     bottom: 80%;
     width: 25%;
+    border-bottom-right-radius: 0;
   }
   .data .data-float::after {
     position: absolute;
+    display: flex;
     content: "\25e5";
     font-size: 50px;
     color: #dddbff;
     bottom: -38px;
-    right: -4px;
+    right: -3.5px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .data .data-float {
+    left: 63%;
+    bottom: 80%;
+    width: 25%;
+    border-bottom-right-radius: 0;
+  }
+  .data .data-float::after {
+    position: absolute;
+    display: flex;
+    content: "\25e5";
+    font-size: 50px;
+    color: #dddbff;
+    bottom: -38px;
+    right: -3px;
   }
 }
 
@@ -175,7 +195,7 @@ body .container {
     justify-content: space-between;
     align-items: flex-end;
     margin: 0 0 240px 0;
-    width: 54%;
+    width: 1036px;
     max-width: 100%;
     height: 50vh;
   }

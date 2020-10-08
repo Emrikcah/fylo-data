@@ -56,7 +56,6 @@
     position: absolute;
     left: 27%;
     bottom: -20%;
-
     background: $pale-blue;
     text-align: center;
     border-radius: 8px;
@@ -86,17 +85,46 @@
     }
 
     .data-float {
+      
       left: 63%;
       bottom: 80%;
       width: 25%;
+      border-bottom-right-radius: 0;
+
 
       &::after {
         position: absolute;
+        display: flex;
         content: "\25e5";
         font-size: 50px;
         color: $pale-blue;
         bottom: -38px;
-        right: -4px;
+        right: -3.5px;
+       
+      }
+    }
+  }
+}
+@media (min-width: $lg-desktop) {
+  .data {
+    
+
+    .data-float {
+      
+      left: 63%;
+      bottom: 80%;
+      width: 25%;
+      border-bottom-right-radius: 0;
+
+
+      &::after {
+        position: absolute;
+        display: flex;
+        content: "\25e5";
+        font-size: 50px;
+        color: $pale-blue;
+        bottom: -38px;
+        right: -3px;
        
       }
     }
